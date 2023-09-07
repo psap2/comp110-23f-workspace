@@ -35,4 +35,4 @@ if counter_of_inputted_character == 0:
 if counter_of_inputted_character == 1:
     print("1 instance of " + user_inputted_singe_character + " found in " + user_inputted_word)
 else:
-    print(str(counter_of_inputted_character) + " instance of " + user_inputted_singe_character + " found in " + user_inputted_word)
+    print(str(counter_of_inputted_character) + " instances of " + user_inputted_singe_character + " found in " + user_inputted_word)
