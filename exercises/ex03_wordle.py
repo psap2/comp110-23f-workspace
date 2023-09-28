@@ -4,8 +4,7 @@ __author__ = "730651920"
 WHITE_BOX: str = "\U00002B1C"
 GREEN_BOX: str = "\U0001F7E9"
 YELLOW_BOX: str = "\U0001F7E8"
-#add appropriate function header
-
+# add appropriate function header
 
 def contains_char(string_searched: str, string_matched: str) -> bool:
     """This function returns true if any character matches string being searched."""
@@ -41,11 +40,11 @@ def emojified(guess_string: str, secret_string: str) -> str:
 
 
 def input_guess(expected_length: int) -> str:
+    """Add appropriate docstring."""
     user_input: str = input(f"Enter a { expected_length } character word: ")
     while len(user_input) != expected_length:
         user_input = input(f"That wasn't {expected_length} chars! Try again: ")
-    if len(user_input) == expected_length:
-        return user_input
+    return user_input
 
 
 def main() -> None:
