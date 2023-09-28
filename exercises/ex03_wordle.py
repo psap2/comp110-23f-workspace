@@ -31,7 +31,7 @@ def emojified(guess_string: str, secret_string: str) -> str:
         # run the function contains char to see if any characters are contained
         if contains_char(secret_string[idx_secret], guess_string[idx_secret]):
             guess_result += GREEN_BOX
-        else: # checking if any characters are included in the secret string but just not in the right spot
+        else:  # checking if any characters are included in the secret string but just not in the right spot
             if contains_char(secret_string, guess_string[idx_secret]):
                 guess_result += YELLOW_BOX
             else:
