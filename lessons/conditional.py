@@ -16,3 +16,5 @@ if my_number == 10:
     print("Right!")
 else:
     print("Wrong!")
+
+print(2 + 2 / 2 ** (2 * 0))

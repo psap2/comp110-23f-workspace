@@ -52,7 +52,7 @@ def input_guess(expected_length: int) -> str:
 def main() -> None:
     """The entrypoint of the program and main game loop."""
     # secret word as a variable
-    secret_word: str = "codes"
+    secret_word: str = "thakur"
     # counter variable for the number of tries
     number_of_tries: int = 1
     # boolean to check if the user has guessed the correct word
