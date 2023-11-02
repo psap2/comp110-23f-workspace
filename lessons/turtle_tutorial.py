@@ -22,14 +22,14 @@ while (i < 3):
     i += 1
 leo.end_fill()
 
-side_length: int = 300 
+side_length: float = 300.0 
 bob.speed(50)
 bob.penup()
 bob.goto(-150,-75)
 bob.pendown()
 j: int = 0
 while (j < 35):
-    side_length *= .95
+    side_length = .95
     bob.forward(side_length)
     bob.left(121.5)
     j = j + 1
