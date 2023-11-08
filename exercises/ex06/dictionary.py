@@ -1,4 +1,4 @@
-"""Exercise 6: Dictionary Functions"""
+"""Exercise 6: Dictionary Functions."""
 
 __author__ = "730651920"
 
@@ -10,7 +10,7 @@ def invert(d: dict[str, str]) -> dict[str, str]:
         for key2 in d:
             if d[key1] == d[key2] and key1 != key2:
                 raise KeyError("cannot have a dictionary with the same keys")
-    return_dict[d[key1]] = key1
+        return_dict[d[key1]] = key1
     return return_dict
 
 
@@ -26,19 +26,20 @@ def favorite_color(d: dict[str, str]) -> str:
         if highest_count < count:
             highest_count = count
             popular_color = d[key1]
-    count = 0
+        count = 0
     return popular_color
 
 
 def count(list1: list[str]) -> dict[str, int]:
     """Function used to return the frequency of strings.""" 
-    return_dict: dict[str, int] ={}
+    return_dict: dict[str, int] = {}
     count: int = 0
     for iteam1 in list1:
         for iteam2 in list1:
             if iteam1 == iteam2:
                 count += 1
         return_dict[iteam1] = count
+        count = 0 
     return return_dict        
 
 
@@ -61,3 +62,4 @@ def update_attendance(d: dict[str, list[str]], day_of_week: str, student_name: s
     if day_of_week not in d: 
         updated_record[day_of_week] = list()
         updated_record[day_of_week].append(student_name)
+    return updated_record
