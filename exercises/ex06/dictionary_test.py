@@ -32,7 +32,7 @@ def test_invert_with_same_keys() -> None:
 
 
 def test_favorite_color_expected_outcome() -> None: 
-    """Function to test if favorite color returns the most popular color"""
+    """Function to test if favorite color returns the most popular color."""
     test_dict: dict[str, str] = {"Marc": "yellow", "Ezri": "blue", "Kris": "blue"}
     expected: str = "blue"
     assert favorite_color(test_dict) == expected
@@ -98,21 +98,21 @@ def test_update_attendence_expected_outcome() -> None:
     """Function to test if update attendence returns a correct list with correct attendence."""
     attendance_log: dict[str, list[str]] = {"Monday": ["Vrinda", "Kaleb"], "Tuesday": ["Alyssa"]}
     expected: dict[str, list[str]] = {"Monday": ["Vrinda", "Kaleb"], "Tuesday": ["Alyssa", "Vrinda"]}
-    assert update_attendance(attendance_log, "Tuesday" , "Vrinda") == expected
+    assert update_attendance(attendance_log, "Tuesday", "Vrinda") == expected
 
 
 def test_update_attendence_two_updates_outcome() -> None:
-        """Function to test if update attendence returns a correct list given 3 updates attendence."""
-        attendance_log: dict[str, list[str]] = {"Monday": ["Vrinda", "Kaleb"], "Tuesday": ["Alyssa"]}
-        expected: dict[str, list[str]] = {"Monday": ["Vrinda", "Kaleb"], "Tuesday": ["Alyssa", "Vrinda", "Prasun"]}
-        update_attendance(attendance_log, "Tuesday" , "Vrinda")
-        assert update_attendance(attendance_log, "Tuesday" , "Prasun") == expected
+    """Function to test if update attendence returns a correct list given 3 updates attendence."""
+    attendance_log: dict[str, list[str]] = {"Monday": ["Vrinda", "Kaleb"], "Tuesday": ["Alyssa"]}
+    expected: dict[str, list[str]] = {"Monday": ["Vrinda", "Kaleb"], "Tuesday": ["Alyssa", "Vrinda", "Prasun"]}
+    update_attendance(attendance_log, "Tuesday", "Vrinda")
+    assert update_attendance(attendance_log, "Tuesday", "Prasun") == expected
 
 
 def test_update_attendence_three_updates_outcome() -> None:
-        """Function to test if update attendence returns a correct list given 2 updates attendence."""
-        attendance_log: dict[str, list[str]] = {"Monday": ["Vrinda", "Kaleb"], "Tuesday": ["Alyssa"]}
-        expected: dict[str, list[str]] = {"Monday": ["Vrinda", "Kaleb", "Ayush"], "Tuesday": ["Alyssa", "Vrinda", "Prasun"]}
-        update_attendance(attendance_log, "Monday" , "Ayush")
-        update_attendance(attendance_log, "Tuesday" , "Vrinda")
-        assert update_attendance(attendance_log, "Tuesday" , "Prasun") == expected
+    """Function to test if update attendence returns a correct list given 2 updates attendence."""
+    attendance_log: dict[str, list[str]] = {"Monday": ["Vrinda", "Kaleb"], "Tuesday": ["Alyssa"]}
+    expected: dict[str, list[str]] = {"Monday": ["Vrinda", "Kaleb", "Ayush"], "Tuesday": ["Alyssa", "Vrinda", "Prasun"]}
+    update_attendance(attendance_log, "Monday" , "Ayush")
+    update_attendance(attendance_log, "Tuesday", "Vrinda")
+    assert update_attendance(attendance_log, "Tuesday", "Prasun") == expected
