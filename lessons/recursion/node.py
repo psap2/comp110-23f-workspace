@@ -22,11 +22,22 @@ class Node:
         else:
             return f"{self.data} -> {self.next}"
         
-    def head(self):
-        return None
+    def head(self) -> int:
+        """Returns the data attribute with the first element in the linked list."""
+        return_int: int
+        return_int = self.data
+        return return_int
     
-    def tail(self):
-        return None
+    def tail(self) -> Node | None:
+        """Returns a linked list of every element minus the head.""" 
+        return self.next
     
-    def last(self):
+    def last(self) -> int:
+        """Returns the data of the last element in the linked list."""
+        return_int: int
+        if self.next is None:
+            return_int = self.data
+            return return_int
+        else:
+            return self.next.last()
         return None
