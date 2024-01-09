@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../comp110-workspace-psap2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "comp110-23f-workspace"
+	}
+}
