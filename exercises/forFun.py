@@ -1,10 +1,7 @@
-"""For fun"""
+"""To do App!"""
 
 name = str("Prasun Sapkota")
 print(name)
 
-"""what is the middle letter of my full name?"""
-
-middleNumber = int(len(name)/2)
-print(middleNumber)
-print(name[middleNumber-2])
+objective1: str = input("Hey, what would you like to accomplish today?")
+print(objective1)
